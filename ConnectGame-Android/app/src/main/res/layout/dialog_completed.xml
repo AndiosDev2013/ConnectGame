@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="540.0px"
+        android:layout_height="300.0px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical"
+        android:padding="20.0dip" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/button_next"
+                style="@style/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/click_button_min"
+                android:text="Next" />
+
+            <Button
+                android:id="@+id/button_level"
+                style="@style/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/click_button_min"
+                android:text="Menu" />
+
+            <Button
+                android:id="@+id/button_yes"
+                style="@style/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/click_button_min"
+                android:text="Ok"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="COMPLETED"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout_button"
+            android:layout_alignLeft="@+id/linearLayout_button"
+            android:layout_below="@+id/imageView1"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_time" />
+
+            <TextView
+                android:id="@+id/textView_time"
+                style="@style/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="right|center" >
+
+                    <ImageView
+                        android:id="@+id/imageView_star1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_star" />
+
+                    <ImageView
+                        android:id="@+id/imageView_star2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_star" />
+
+                    <ImageView
+                        android:id="@+id/imageView_star3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_star" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_bonus"
+                    style="@style/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:text="+10000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/txt_completed" />
+    </RelativeLayout>
+
+</RelativeLayout>

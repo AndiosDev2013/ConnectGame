@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">ConnectGame</string>
+    
+    <string name="flurry_key">MS862K6YYQ39YFWQW5Z5</string>
+    <string name="mopub_id">20cba752f4504cbc841a77629dee8adc</string>
+    <string name="mopub_interstitial_id">8aea15d335e94307b0b28b3d4c754fe7</string>
+    <string name="admob_id">ca-app-pub-1163451809360404/2265537216</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="txt_exit">You want to exit the game ?</string>
+
+</resources>
